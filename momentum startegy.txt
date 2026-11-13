@@ -770,3 +770,32 @@ elif salary > 30000 and cibil > 700 and age > 55:
 
 else:
     print("Loan Rejected")
+
+#HR 
+cur_pay=int(input("Applicants current pay is:"))
+experience=int(input("Applicants experience:"))
+if cur_pay<40000 and experience>5:
+    print('Schedule')
+elif experience<5:
+    print('Shortlist')
+else:
+    print('Reject')
+# Marketing 
+purchase=int(input("Total bill:"))
+cred_days=int(input("Credit period:"))
+if purchase>=50000 and cred_days==0:
+    print("12% Discount")
+elif purchase>=50000 and cred_days==10:
+    print("11% Discount")
+elif purchase>=50000 and cred_days==20:
+    print("10% Discount")
+elif purchase>=30000 and cred_days==0:
+    print("7% Discount")
+elif purchase>=30000 and cred_days==10:
+    print("6% Discount")
+elif purchase>=30000 and cred_days==20:
+    print("5% Discount")
+else:
+    print("0% Discount")
+
+
