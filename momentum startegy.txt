@@ -799,3 +799,29 @@ else:
     print("0% Discount")
 
 
+
+salary = float(input("Enter salary: "))
+experience = int(input("Enter experience: "))
+performance = int(input("Enter performance rating: "))
+
+if salary > 50000 and experience > 5 and performance > 90:
+    bonus = 25
+
+elif salary > 40000 and experience > 3 and performance > 80:
+    bonus = 15
+
+elif performance > 70:
+    bonus = 10
+
+else:
+    bonus = 5
+
+bonus_amount = salary * bonus / 100
+
+final_salary = salary + bonus_amount
+
+print("Bonus Percentage:", bonus)
+print("Bonus Amount:", bonus_amount)
+print("Final Salary:", final_salary)
+
+
